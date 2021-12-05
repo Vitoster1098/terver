@@ -1,0 +1,10 @@
+D:\МАГИСРАТУРА\2ой курс\C#\Laba3\NormRaspApp\bin\Debug\NormRaspApp.exe.config
+D:\МАГИСРАТУРА\2ой курс\C#\Laba3\NormRaspApp\bin\Debug\NormRaspApp.exe
+D:\МАГИСРАТУРА\2ой курс\C#\Laba3\NormRaspApp\bin\Debug\NormRaspApp.pdb
+D:\МАГИСРАТУРА\2ой курс\C#\Laba3\NormRaspApp\obj\Debug\NormRaspApp.csprojAssemblyReference.cache
+D:\МАГИСРАТУРА\2ой курс\C#\Laba3\NormRaspApp\obj\Debug\NormRaspApp.Form1.resources
+D:\МАГИСРАТУРА\2ой курс\C#\Laba3\NormRaspApp\obj\Debug\NormRaspApp.Properties.Resources.resources
+D:\МАГИСРАТУРА\2ой курс\C#\Laba3\NormRaspApp\obj\Debug\NormRaspApp.csproj.GenerateResource.cache
+D:\МАГИСРАТУРА\2ой курс\C#\Laba3\NormRaspApp\obj\Debug\NormRaspApp.csproj.CoreCompileInputs.cache
+D:\МАГИСРАТУРА\2ой курс\C#\Laba3\NormRaspApp\obj\Debug\NormRaspApp.exe
+D:\МАГИСРАТУРА\2ой курс\C#\Laba3\NormRaspApp\obj\Debug\NormRaspApp.pdb

@@ -1,0 +1,10 @@
+D:\МАГИСРАТУРА\2ой курс\C#\Laba4\Laba4\bin\Debug\Laba4.exe.config
+D:\МАГИСРАТУРА\2ой курс\C#\Laba4\Laba4\bin\Debug\Laba4.exe
+D:\МАГИСРАТУРА\2ой курс\C#\Laba4\Laba4\bin\Debug\Laba4.pdb
+D:\МАГИСРАТУРА\2ой курс\C#\Laba4\Laba4\obj\Debug\Laba4.csprojAssemblyReference.cache
+D:\МАГИСРАТУРА\2ой курс\C#\Laba4\Laba4\obj\Debug\Laba4.Form1.resources
+D:\МАГИСРАТУРА\2ой курс\C#\Laba4\Laba4\obj\Debug\Laba4.Properties.Resources.resources
+D:\МАГИСРАТУРА\2ой курс\C#\Laba4\Laba4\obj\Debug\Laba4.csproj.GenerateResource.cache
+D:\МАГИСРАТУРА\2ой курс\C#\Laba4\Laba4\obj\Debug\Laba4.csproj.CoreCompileInputs.cache
+D:\МАГИСРАТУРА\2ой курс\C#\Laba4\Laba4\obj\Debug\Laba4.exe
+D:\МАГИСРАТУРА\2ой курс\C#\Laba4\Laba4\obj\Debug\Laba4.pdb
