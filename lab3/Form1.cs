@@ -61,7 +61,7 @@ namespace NormRaspApp
                 var count = list.Where(x => x > a && x <= b).ToArray().Count();
                 var ch = count / (k * range);
                 chart1.Series[0].Points.AddXY((a + b) / 2, ch);
-                chart1.Series[1].Points.AddXY((a + b) / 2, (1 / (Q * Math.Sqrt(2 * Math.PI))) * Math.Exp((-1/2) * (Math.Pow((((a + b) / 2) - M), 2)) / ( Math.Pow(Q, 2))));
+                chart1.Series[1].Points.AddXY((a + b) / 2, (1 / (Q * Math.Sqrt(2 * Math.PI))) * Math.Exp(-1 * (Math.Pow((((a + b) / 2) - M), 2)) / (2 * Math.Pow(Q, 2))));
                 a += range;
                 b += range;
             }
