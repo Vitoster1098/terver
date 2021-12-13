@@ -8,3 +8,13 @@ C:\Users\Пользователь\Desktop\лабы тервер\lab1\lab1\obj\De
 C:\Users\Пользователь\Desktop\лабы тервер\lab1\lab1\obj\Debug\lab1.csproj.CoreCompileInputs.cache
 C:\Users\Пользователь\Desktop\лабы тервер\lab1\lab1\obj\Debug\lab1.exe
 C:\Users\Пользователь\Desktop\лабы тервер\lab1\lab1\obj\Debug\lab1.pdb
+C:\Users\vitali\Desktop\эмис-24м лабы 3 семестр\Раухваргер\lab1\lab1\bin\Debug\lab1.exe.config
+C:\Users\vitali\Desktop\эмис-24м лабы 3 семестр\Раухваргер\lab1\lab1\bin\Debug\lab1.exe
+C:\Users\vitali\Desktop\эмис-24м лабы 3 семестр\Раухваргер\lab1\lab1\bin\Debug\lab1.pdb
+C:\Users\vitali\Desktop\эмис-24м лабы 3 семестр\Раухваргер\lab1\lab1\obj\Debug\lab1.csproj.AssemblyReference.cache
+C:\Users\vitali\Desktop\эмис-24м лабы 3 семестр\Раухваргер\lab1\lab1\obj\Debug\lab1.Form1.resources
+C:\Users\vitali\Desktop\эмис-24м лабы 3 семестр\Раухваргер\lab1\lab1\obj\Debug\lab1.Properties.Resources.resources
+C:\Users\vitali\Desktop\эмис-24м лабы 3 семестр\Раухваргер\lab1\lab1\obj\Debug\lab1.csproj.GenerateResource.cache
+C:\Users\vitali\Desktop\эмис-24м лабы 3 семестр\Раухваргер\lab1\lab1\obj\Debug\lab1.csproj.CoreCompileInputs.cache
+C:\Users\vitali\Desktop\эмис-24м лабы 3 семестр\Раухваргер\lab1\lab1\obj\Debug\lab1.exe
+C:\Users\vitali\Desktop\эмис-24м лабы 3 семестр\Раухваргер\lab1\lab1\obj\Debug\lab1.pdb

@@ -16,37 +16,54 @@ namespace Laba4
         {
             InitializeComponent();
         }
+        double matOzid, otkonenie;
+        int steps;
 
-        private void Form1_Load(object sender, EventArgs e)
+        bool setValues() //Установка значений
         {
-
+            try
+            {
+                matOzid = Convert.ToDouble(textBox1.Text);
+                otkonenie = Convert.ToDouble(textBox2.Text);
+                steps = Convert.ToInt32(textBox3.Text);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Ошибка");
+                return false;
+            }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e) //Очистить
         {
-            //ввод переменных + очиста чарта
+            textBox1.Text = "";
+            textBox2.Text = "";
+            textBox3.Text = "";
             chart1.Series[0].Points.Clear();
             chart1.Series[1].Points.Clear();
-            double M = Convert.ToDouble(textBox1.Text);
-            double Q = Convert.ToDouble(textBox2.Text);
-            int k = Convert.ToInt32(textBox3.Text);
+        }
 
+        private void button1_Click(object sender, EventArgs e) //Расчитать
+        {
+            if (!setValues())
+            {
+                return;
+            }
+            
+            chart1.Series[0].Points.Clear();
+            chart1.Series[1].Points.Clear();           
 
-            //double shag = (5 * Q) / 1000;
-
-            //рандом + лист
             Random r = new Random();
             Random x = new Random(r.Next(10000));
             Random y = new Random(r.Next(10000));
             List<double> list = new List<double>();
 
-            for (int i = 0; i < k; i++)
+            for (int i = 0; i < steps; i++)
             {
-                var U = Math.Cos(2 * Math.PI * x.NextDouble()) * Math.Sqrt(-2 * Math.Log(y.NextDouble()));
-
-                var Z = Q * U + M;
-
-                list.Add(Z);
+                double u = Math.Cos(2 * Math.PI * x.NextDouble()) * Math.Sqrt(-2 * Math.Log(y.NextDouble()));
+                double z = otkonenie * u + matOzid;
+                list.Add(z);
             }
 
             double max = list.Max();
@@ -54,12 +71,14 @@ namespace Laba4
             double range = (max - min) / 20;
             double a = min;
             double b = min + range;
+
             for (double i = min; i <= max; i += range)
             {
-                var count = list.Where(p => p > a && p <= b).ToArray().Count();
-                var ch = count / (k * range);
-                chart1.Series[0].Points.AddXY((a + b) / 2, ch);
-                chart1.Series[1].Points.AddXY((a + b) / 2, (1 / (Q * Math.Sqrt(2 * Math.PI))) * Math.Exp(-1 * (Math.Pow((((a + b) / 2) - M), 2)) / (2 * Math.Pow(Q, 2))));
+                int count = list.Where(p => p > a && p <= b).ToArray().Count();
+                double chastota = count / (steps * range);
+                chart1.Series[0].Points.AddXY((a + b) / 2, chastota);
+                chart1.Series[1].Points.AddXY((a + b) / 2, (1 / (otkonenie * Math.Sqrt(2 * Math.PI))) * 
+                    Math.Exp(-1 * (Math.Pow((((a + b) / 2) - matOzid), 2)) / (2 * Math.Pow(otkonenie, 2))));
                 a += range;
                 b += range;
             }

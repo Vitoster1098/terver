@@ -17,37 +17,55 @@ namespace NormRaspApp
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        double matOzid, otkonenie;
+        int steps;
+
+        bool setValues()
         {
-            //ввод переменных + очиста чарта
+            try
+            {
+                matOzid = Convert.ToDouble(textBox1.Text);
+                otkonenie = Convert.ToDouble(textBox2.Text);
+                steps = Convert.ToInt32(textBox3.Text);
+                return true;
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Ошибка");
+                return false;
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e) //Рассчитать
+        {
+            if (!setValues()) 
+            { 
+                return; 
+            }
+            
             chart1.Series[0].Points.Clear();
             chart1.Series[1].Points.Clear();
-            double M = Convert.ToDouble(textBox1.Text);
-            double Q = Convert.ToDouble(textBox2.Text);
-            int k = Convert.ToInt32(textBox3.Text);
 
-
-            double shag = (5 * Q) / 1000;
-
-            //рандом + лист
-            Random r = new Random();
+            double shag = (5 * otkonenie) / 1000;
+            
             List<double> list = new List<double>();
+            Random r = new Random();
 
-            for (int i = 0; i < k; i++)
+            for (int i = 0; i < steps; i++)
             {
                 double x = r.NextDouble();
                 double y0 = 0;
-                double S = 0; 
-                double h = M - 5 * Q;  
+                double S = 0;
+                double h = matOzid - 5 * otkonenie;
 
-                while (S <= x * Q * Math.Sqrt(2 * Math.PI))
+                while (S <= x * otkonenie * Math.Sqrt(2 * Math.PI))
                 {
-                    var y = Math.Exp(-1 * Math.Pow((h - M), 2) / (2 * Math.Pow(Q, 2))); // расчет части с exp
+                    double y = Math.Exp(-1 * Math.Pow((h - matOzid), 2) / (2 * Math.Pow(otkonenie, 2))); // расчет части с exp
                     y0 = h;
                     S += y * shag;
                     h += shag;
                 }
-                var Y = (y0 + h) / 2;
+                double Y = (y0 + h) / 2;
                 list.Add(Y);
             }
 
@@ -56,12 +74,14 @@ namespace NormRaspApp
             double range = (max - min) / 20;
             double a = min;
             double b = min + range;
+
             for (double i = min; i <= max; i += range)
             {
-                var count = list.Where(x => x > a && x <= b).ToArray().Count();
-                var ch = count / (k * range);
-                chart1.Series[0].Points.AddXY((a + b) / 2, ch);
-                chart1.Series[1].Points.AddXY((a + b) / 2, (1 / (Q * Math.Sqrt(2 * Math.PI))) * Math.Exp(-1 * (Math.Pow((((a + b) / 2) - M), 2)) / (2 * Math.Pow(Q, 2))));
+                int count = list.Where(x => x > a && x <= b).ToArray().Count();
+                double chastota = count / (steps * range);
+                chart1.Series[0].Points.AddXY((a + b) / 2, chastota);
+                chart1.Series[1].Points.AddXY((a + b) / 2, (1 / (otkonenie * Math.Sqrt(2 * Math.PI))) * 
+                    Math.Exp(-1 * (Math.Pow((((a + b) / 2) - matOzid), 2)) / (2 * Math.Pow(otkonenie, 2))));
                 a += range;
                 b += range;
             }
