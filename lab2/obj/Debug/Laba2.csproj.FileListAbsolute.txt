@@ -8,3 +8,13 @@ D:\МАГИСРАТУРА\2ой курс\C#\Laba2\Laba2\obj\Debug\Laba2.csproj.G
 D:\МАГИСРАТУРА\2ой курс\C#\Laba2\Laba2\obj\Debug\Laba2.csproj.CoreCompileInputs.cache
 D:\МАГИСРАТУРА\2ой курс\C#\Laba2\Laba2\obj\Debug\Laba2.exe
 D:\МАГИСРАТУРА\2ой курс\C#\Laba2\Laba2\obj\Debug\Laba2.pdb
+C:\Users\vitali\Desktop\эмис-24м лабы 3 семестр\Раухваргер\lab2\bin\Debug\Laba2.exe.config
+C:\Users\vitali\Desktop\эмис-24м лабы 3 семестр\Раухваргер\lab2\bin\Debug\Laba2.exe
+C:\Users\vitali\Desktop\эмис-24м лабы 3 семестр\Раухваргер\lab2\bin\Debug\Laba2.pdb
+C:\Users\vitali\Desktop\эмис-24м лабы 3 семестр\Раухваргер\lab2\obj\Debug\Laba2.csproj.AssemblyReference.cache
+C:\Users\vitali\Desktop\эмис-24м лабы 3 семестр\Раухваргер\lab2\obj\Debug\Laba2.Form1.resources
+C:\Users\vitali\Desktop\эмис-24м лабы 3 семестр\Раухваргер\lab2\obj\Debug\Laba2.Properties.Resources.resources
+C:\Users\vitali\Desktop\эмис-24м лабы 3 семестр\Раухваргер\lab2\obj\Debug\Laba2.csproj.GenerateResource.cache
+C:\Users\vitali\Desktop\эмис-24м лабы 3 семестр\Раухваргер\lab2\obj\Debug\Laba2.csproj.CoreCompileInputs.cache
+C:\Users\vitali\Desktop\эмис-24м лабы 3 семестр\Раухваргер\lab2\obj\Debug\Laba2.exe
+C:\Users\vitali\Desktop\эмис-24м лабы 3 семестр\Раухваргер\lab2\obj\Debug\Laba2.pdb

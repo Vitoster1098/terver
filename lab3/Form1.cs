@@ -1,11 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace NormRaspApp
@@ -20,7 +16,7 @@ namespace NormRaspApp
         double matOzid, otkonenie;
         int steps;
 
-        bool setValues()
+        bool setValues() //Проверить и установить значения
         {
             try
             {
@@ -34,6 +30,15 @@ namespace NormRaspApp
                 MessageBox.Show(ex.Message, "Ошибка");
                 return false;
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e) //Очистить
+        {
+            textBox1.Text = "";
+            textBox2.Text = "";
+            textBox3.Text = "";
+            chart1.Series[0].Points.Clear();
+            chart1.Series[1].Points.Clear();
         }
 
         private void button1_Click(object sender, EventArgs e) //Рассчитать
@@ -60,7 +65,7 @@ namespace NormRaspApp
 
                 while (S <= x * otkonenie * Math.Sqrt(2 * Math.PI))
                 {
-                    double y = Math.Exp(-1 * Math.Pow((h - matOzid), 2) / (2 * Math.Pow(otkonenie, 2))); // расчет части с exp
+                    double y = Math.Exp(-1 * Math.Pow((h - matOzid), 2) / (2 * Math.Pow(otkonenie, 2)));
                     y0 = h;
                     S += y * shag;
                     h += shag;
@@ -85,7 +90,6 @@ namespace NormRaspApp
                 a += range;
                 b += range;
             }
-
         }
     }
 }
