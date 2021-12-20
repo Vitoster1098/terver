@@ -1,0 +1,10 @@
+D:\МАГИСРАТУРА\2ой курс\C#\Kursovaya_BoxMuller\bin\Debug\Kursovaya_BoxMuller.exe.config
+D:\МАГИСРАТУРА\2ой курс\C#\Kursovaya_BoxMuller\bin\Debug\Kursovaya_BoxMuller.exe
+D:\МАГИСРАТУРА\2ой курс\C#\Kursovaya_BoxMuller\bin\Debug\Kursovaya_BoxMuller.pdb
+D:\МАГИСРАТУРА\2ой курс\C#\Kursovaya_BoxMuller\obj\Debug\Kursovaya_BoxMuller.csprojAssemblyReference.cache
+D:\МАГИСРАТУРА\2ой курс\C#\Kursovaya_BoxMuller\obj\Debug\Kursovaya_BoxMuller.Form1.resources
+D:\МАГИСРАТУРА\2ой курс\C#\Kursovaya_BoxMuller\obj\Debug\Kursovaya_BoxMuller.Properties.Resources.resources
+D:\МАГИСРАТУРА\2ой курс\C#\Kursovaya_BoxMuller\obj\Debug\Kursovaya_BoxMuller.csproj.GenerateResource.cache
+D:\МАГИСРАТУРА\2ой курс\C#\Kursovaya_BoxMuller\obj\Debug\Kursovaya_BoxMuller.csproj.CoreCompileInputs.cache
+D:\МАГИСРАТУРА\2ой курс\C#\Kursovaya_BoxMuller\obj\Debug\Kursovaya_BoxMuller.exe
+D:\МАГИСРАТУРА\2ой курс\C#\Kursovaya_BoxMuller\obj\Debug\Kursovaya_BoxMuller.pdb
