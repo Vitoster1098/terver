@@ -29,9 +29,9 @@ namespace Kursovaya_BoxMuller
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -50,17 +50,17 @@ namespace Kursovaya_BoxMuller
             // 
             // chart1
             // 
-            chartArea3.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chart1.Legends.Add(legend3);
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
             this.chart1.Location = new System.Drawing.Point(192, 8);
-            this.chart1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chart1.Margin = new System.Windows.Forms.Padding(2);
             this.chart1.Name = "chart1";
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.Name = "Плотность частоты";
-            this.chart1.Series.Add(series3);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Плотность частоты";
+            this.chart1.Series.Add(series2);
             this.chart1.Size = new System.Drawing.Size(759, 482);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
@@ -78,7 +78,7 @@ namespace Kursovaya_BoxMuller
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(9, 27);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(76, 20);
             this.textBox1.TabIndex = 3;
@@ -86,7 +86,7 @@ namespace Kursovaya_BoxMuller
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(94, 27);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(76, 20);
             this.textBox2.TabIndex = 5;
@@ -104,7 +104,7 @@ namespace Kursovaya_BoxMuller
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(9, 68);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(76, 20);
             this.textBox3.TabIndex = 7;
@@ -122,7 +122,7 @@ namespace Kursovaya_BoxMuller
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(94, 68);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(76, 20);
             this.textBox4.TabIndex = 9;
@@ -135,12 +135,12 @@ namespace Kursovaya_BoxMuller
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(28, 13);
             this.label4.TabIndex = 8;
-            this.label4.Text = "σ (x)";
+            this.label4.Text = "σ (y)";
             // 
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(9, 127);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(2);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(161, 20);
             this.textBox5.TabIndex = 11;
@@ -158,7 +158,7 @@ namespace Kursovaya_BoxMuller
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(94, 161);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(76, 38);
             this.button2.TabIndex = 12;
@@ -195,9 +195,9 @@ namespace Kursovaya_BoxMuller
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.chart1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
-            this.Text = "Курсовая работа";
+            this.Text = "Курсовая работа Матвеев вариант №1";
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
