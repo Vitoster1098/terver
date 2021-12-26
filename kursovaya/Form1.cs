@@ -20,8 +20,8 @@ namespace Kursovaya_BoxMuller
             try
             {
                 Mx = Convert.ToDouble(textBox1.Text);
-                My = Convert.ToDouble(textBox2.Text);
-                QX = Convert.ToDouble(textBox3.Text);
+                My = Convert.ToDouble(textBox3.Text);
+                QX = Convert.ToDouble(textBox2.Text);
                 QY = Convert.ToDouble(textBox4.Text);                
                 steps = Convert.ToInt32(textBox5.Text);
                 return true;
